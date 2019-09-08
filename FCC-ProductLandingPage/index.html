@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" id="logo">
+            <img src="https://svgsilh.com/svg/29201.svg" alt="logo de la tienda" id="header-img">
+            <p id="text-logo">TEMPO Guitars</p>
+        </a>
+        <nav id="nav-bar">
+            <ul id="menu">
+                <li><a href="#section-servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#section-ofertas" class="nav-link">Ofertas</a></li>
+                <li><a href="#section-contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <legend>Suscríbase a nuestas notificaciones de ofertas y productos.</legend>
+            <label for="email" id="email-label">
+                <input type="email" name="email" id="email" placeholder="Ingrese su email">
+            </label>
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+    </section>
+    <section id="section-servicios">
+        <p class="titulo-seccion">Servicios.</p>
+        <div id="servicios-variedad" class="servicios">
+            <img src="http://guitarspr.com/wp-content/uploads/electric-guitars-puerto-rico.jpg" alt="varias guitarras" class="servicio-imagen">
+            <p class="servicio-descripcion">Tenemos una amplia variedad de guitarras de todo tipo.
+            </p>
+        </div>
+        <div id="servicios-accesorios" class="servicios">
+            <img src="https://www.keytarhq.com/images/guitar-accessories-acoustic-electric-bass-guitars.jpg" alt="accesorios de guitarra" class="servicio-imagen">
+            <p class="servicio-descripcion">Contamos con todos los accesorios que se pueda necesitar para tocar la guitarra.
+            </p>
+        </div>
+        <div id="servicios-reparacion" class="servicios">
+            <img src="http://guitarrasvico.es/images/img_electrica.jpg" alt="reparación de una guitarra" class="servicio-imagen">
+            <p class="servicio-descripcion">Nuestro servicio de luthería especializada dejara a su instrumento como si fuera nuevo.
+            </p>
+        </div>
+        <iframe width="727" height="409" src="https://www.youtube.com/embed/trpwxoRnOD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+    </section>
+    <section id="section-ofertas">
+        <div id="oferta1" class="oferta">
+            <p class="nombre-oferta">Luthería básica</p>
+            <ul class="descripcion-oferta">
+                <li>Limpieza general.</li>
+                <li>Ajuste de cuerdas.</li>
+                <li>Barnizado del cuerpo.</li>
+            </ul>
+            <p class="precio-oferta">$20000</p>
+            <button class="boton-oferta">Comprar</button>
+        </div>
+        <div id="oferta2" class="oferta">
+            <p class="nombre-oferta">Luthería completa</p>
+            <ul class="descripcion-oferta">
+                <li>Limpieza, ajuste y calibración.</li>
+                <li>Reemplazo de pastillas y cuerdas.</li>
+                <li>Barnizado del cuerpo.</li>
+            </ul>
+            <p class="precio-oferta">$20000</p>
+            <button class="boton-oferta">Comprar</button>
+        </div>
+    </section>
+    <footer id="section-contacto">
+        <p class="titulo-seccion">Contacto.</p>
+        <div id="medios-de-contacto">
+            <div id="facebook-contacto" class="contenedor-contacto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-YJVjU83WWRbRX74Ks0MlDM1gBTNEP0Uvl95b_HfSGVRXOVFt" alt="logo de facebook" class="contacto-imagen">
+                <a href="#" class="contacto-descripcion">TEMPO-Guitars</a>
+            </div>
+            <div id="telefono-contacto" class="contenedor-contacto">
+                <img src="https://www.promovil.cl/2745-large_default/cat-s60-1-sim-2-sims-dual.jpg" alt="logo de un telefono" class="contacto-imagen">
+                <a href="#" class="contacto-descripcion">+54 9 1144545833</a>
+            </div>
+            <div id="direccion-contacto" class="contenedor-contacto">
+                <img src="https://image.flaticon.com/icons/png/512/856/856332.png" alt="logo que representa una direccion" class="contacto-imagen">
+                <a href="#" class="contacto-descripcion">Calle falsa 123</a>
+            </div>
+        </div>
+        <div id="copyright">Derechos Reservados Gabit 2019.</div>
+    </footer>
+</body>
+</html>

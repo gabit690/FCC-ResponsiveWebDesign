@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario de encuesta</h1>
+    <p id="description">Nos interesa conocer su relación con la tecnología.</p>
+    <form action="#" id="survey-form">
+        <label for="name" id="name-label">Nombre: 
+            <input type="text" id="name" placeholder="Ingrese su nombre" required>
+        </label>
+
+        <label for="email" id="email-label">Email: 
+            <input type="email" id="email" pattern="[a-zA-Z0-9]*[@][a-zA-Z0-9]*[.][a-zA-Z0-9]*" placeholder="Ingrese su email" required>
+        </label>
+
+        <label for="number" id="number-label">Horas de sueño habituales: 
+            <input type="number" id="number" min="0" max="10" placeholder="Ingrese la cantidad" required>
+        </label>
+
+        <p>¿Cuál es su nivel de conocimiento sobre tecnología</p>
+        <select id="dropdown">
+            <option value="Nulo">Nulo</option>
+            <option value="Básico" selected>Básico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+            <option value="Profesional">Profesional</option>
+        </select>
+
+        <p>Elija su género</p>
+        <label class="radio-label"> Femenino <input type="radio" name="genero" value="Femenino"> </label>
+        <label class="radio-label"> Masculino <input type="radio" name="genero" value="Masculino"> </label>
+
+        <p>¿Qué dispositivos usa?</p>
+        <label class="check-label"> <input type="checkbox" name="dispositivos" value="pc-desktop"> PC Desktop</label>
+        <label class="check-label"> <input type="checkbox" name="dispositivos" value="notebook"> Notebook</label>
+        <label class="check-label"> <input type="checkbox" name="dispositivos" value="tablet"> Tablet</label>
+        <label class="check-label"> <input type="checkbox" name="dispositivos" value="smart-phone"> Smart Phone</label>
+        <label class="check-label"> <input type="checkbox" name="dispositivos" value="smart-tv"> Smart TV</label>
+
+        <p>En caso de recordarlo, cuéntenos sobre el primer dispositivo tecnológico que uso en su vida</p>
+        <textarea name="anecdota" id="anecdota" cols="30" rows="10">Escriba aquí...</textarea>
+
+        <input type="submit" value="Enviar" id="submit">
+        <input type="reset" value="Reiniciar" id="reset">
+    </form>
+</body>
+</html>
